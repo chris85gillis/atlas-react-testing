@@ -1,7 +1,7 @@
 import React from 'react';
 
 type CoverArtProps = {
-  artwork: string;
+  artwork?: string;
 };
 
 const CoverArt: React.FC<CoverArtProps> = ({ artwork }) => {

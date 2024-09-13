@@ -1,0 +1,81 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PlayListItem > renders correctly with all props 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-between items-center py-2 flex-nowrap p-6"
+  >
+    <div
+      class="flex-1 min-w-0"
+    >
+      <h2
+        class="text-lg font-semibold text-nightText truncate"
+      >
+        Song Title
+      </h2>
+      <p
+        class="text-sm text-nightSecondary truncate"
+      >
+        Pop
+      </p>
+    </div>
+    <span
+      class="text-sm text-nightSecondary whitespace-nowrap"
+    >
+      3:45
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`PlayListItem > renders correctly with missing genre 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-between items-center py-2 flex-nowrap p-6"
+  >
+    <div
+      class="flex-1 min-w-0"
+    >
+      <h2
+        class="text-lg font-semibold text-nightText truncate"
+      >
+        Song Title
+      </h2>
+      <p
+        class="text-sm text-nightSecondary truncate"
+      />
+    </div>
+    <span
+      class="text-sm text-nightSecondary whitespace-nowrap"
+    >
+      3:45
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`PlayListItem > renders correctly with missing length 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-between items-center py-2 flex-nowrap p-6"
+  >
+    <div
+      class="flex-1 min-w-0"
+    >
+      <h2
+        class="text-lg font-semibold text-nightText truncate"
+      >
+        Song Title
+      </h2>
+      <p
+        class="text-sm text-nightSecondary truncate"
+      >
+        Pop
+      </p>
+    </div>
+    <span
+      class="text-sm text-nightSecondary whitespace-nowrap"
+    />
+  </div>
+</DocumentFragment>
+`;

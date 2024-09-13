@@ -1,0 +1,42 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CoverArt > renders correctly with a missing artwork prop 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center items-center mt-6"
+  >
+    <img
+      alt="Cover Art"
+      class="w-[25rem] h-[22rem] object-cover rounded-lg shadow-custom"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`CoverArt > renders correctly with a valid artwork URL 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center items-center mt-6"
+  >
+    <img
+      alt="Cover Art"
+      class="w-[25rem] h-[22rem] object-cover rounded-lg shadow-custom"
+      src="https://example.com/artwork.jpg"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`CoverArt > renders correctly with an empty artwork URL 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center items-center mt-6"
+  >
+    <img
+      alt="Cover Art"
+      class="w-[25rem] h-[22rem] object-cover rounded-lg shadow-custom"
+      src=""
+    />
+  </div>
+</DocumentFragment>
+`;

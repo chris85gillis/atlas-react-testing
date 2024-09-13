@@ -1,0 +1,54 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SongTitle > renders correctly with missing author 1`] = `
+<DocumentFragment>
+  <div
+    class="text-center mt-4"
+  >
+    <h1
+      class="text-2xl font-bold text-nightText"
+    >
+      Song Title
+    </h1>
+    <p
+      class="text-lg text-nightSecondary"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SongTitle > renders correctly with missing title 1`] = `
+<DocumentFragment>
+  <div
+    class="text-center mt-4"
+  >
+    <h1
+      class="text-2xl font-bold text-nightText"
+    />
+    <p
+      class="text-lg text-nightSecondary"
+    >
+      Artist Name
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SongTitle > renders correctly with title and author 1`] = `
+<DocumentFragment>
+  <div
+    class="text-center mt-4"
+  >
+    <h1
+      class="text-2xl font-bold text-nightText"
+    >
+      Song Title
+    </h1>
+    <p
+      class="text-lg text-nightSecondary"
+    >
+      Artist Name
+    </p>
+  </div>
+</DocumentFragment>
+`;

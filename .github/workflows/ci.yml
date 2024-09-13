@@ -1,0 +1,38 @@
+name: Test and Coverage
+
+# Trigger the workflow on push events to the main branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-and-coverage:
+    runs-on: ubuntu-latest
+
+    # Set up the steps to run tests and generate coverage
+    steps:
+      # Checkout the latest code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Specify the Node.js version, adjust if necessary
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Run tests and generate coverage
+      - name: Run tests and coverage
+        run: npm run coverage
+
+      # Upload coverage reports as artifacts (optional)
+      - name: Upload Coverage Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage # Adjust the path if necessary
